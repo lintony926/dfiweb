@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DFI 公司治理專區｜E 作業程序執行情形・F 內部稽核・G 利害關係人溝通</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto,'Noto Sans TC',sans-serif;color:#1F2A37;background:#fff}
+a{color:#0E8FA5}a:hover{color:#0B3A57}
+button{font-family:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px;width:100%}
+.review{background:#0B2E4F;color:#CFE6EE;font-size:13px;padding:6px 0}
+header{background:#fff;border-bottom:1px solid #E6ECEF;position:sticky;top:0;z-index:20}
+.hbar{display:flex;align-items:center;gap:32px;height:76px}
+.logo{font-size:40px;font-weight:900;letter-spacing:-1px;color:#0E9AAE;text-decoration:none;font-family:'Arial Black',Roboto,sans-serif}
+.hnav{display:flex;gap:36px;font-size:15px;color:#2E3B47;flex:1}
+.hright{display:flex;align-items:center;gap:18px;margin-left:auto}
+.cta{background:linear-gradient(90deg,#0B6E99,#13A9C0);color:#fff;text-decoration:none;padding:12px 20px;font-size:15px}
+.hero{background:linear-gradient(120deg,#EAF6FA 0%,#F6FBFD 45%,#E3F2F8 100%);border-bottom:1px solid #E6ECEF}
+.hero .wrap{padding-top:40px;padding-bottom:44px;display:flex;flex-direction:column;gap:14px}
+.crumb{font-size:14px;color:#5D9BAE;display:flex;flex-wrap:wrap;gap:6px}
+.crumb a{text-decoration:none;color:#5D9BAE}.crumb span.cur{color:#2E3B47}
+h1{margin:0;font-size:44px;line-height:1.15;color:#0D3B5C;text-transform:uppercase}
+h1 em{font-style:normal;color:#12A3B8}
+.zh{font-size:18px;font-weight:500;color:#2E3B47}
+main.wrap{padding-top:36px;padding-bottom:64px}
+.shell{display:flex;gap:32px;align-items:flex-start}
+aside{width:280px;flex-shrink:0}
+.navtoggle{display:none;width:100%;min-height:48px;align-items:center;justify-content:space-between;padding:0 16px;border:1px solid #D5E2E8;background:#fff;border-radius:4px;font-size:16px;font-weight:500;color:#0B3A57;cursor:pointer}
+.side{background:#fff;border:1px solid #D5E2E8;border-radius:4px;box-shadow:0 4px 14px rgba(11,58,87,.08);padding:18px 0 14px}
+.side .ir{padding:0 16px 12px;font-size:15px;color:#5D9BAE;letter-spacing:.04em}
+.side .grp{border-top:1px solid #E6ECEF;padding:13px 16px;font-size:15px;font-weight:500;display:flex;justify-content:space-between}
+.side .grp.on{background:#EEF5F8}
+.side a.n{display:block;text-decoration:none;padding:9px 16px;font-size:14px;line-height:1.4;color:#2E3B47;border-left:2px solid transparent}
+.side a.n small{display:block;font-size:12px;color:#8A99A4}
+.side a.n.on{color:#0E8FA5;border-left-color:#12A3B8}
+.side a.n.here{font-weight:700}
+.side a.k{display:block;text-decoration:none;padding:6px 16px 6px 32px;font-size:13px;line-height:1.4;color:#55636F}
+.side a.k.here{color:#0E8FA5;font-weight:700}
+.content{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:28px}
+.lead{margin:0;font-size:17px;line-height:1.85;color:#2E3B47}
+h2{margin:0;font-size:22px;line-height:1.35;color:#0D3B5C}
+h2.big{font-size:28px;margin-top:8px}
+.blk{display:flex;flex-direction:column;gap:14px}
+.paras{font-size:16px;line-height:1.9}
+.paras p{margin:0}
+.tw{overflow-x:auto;border:1px solid #D5E2E8;border-radius:4px;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px;line-height:1.65}
+th{background:#0B2E4F;color:#fff;font-weight:500;text-align:left;padding:12px 14px;white-space:pre-line;vertical-align:top}
+td{padding:12px 14px;border-top:1px solid #E6ECEF;white-space:pre-line;vertical-align:top}
+.tnote{font-size:13px;line-height:1.75;color:#55636F;white-space:pre-line}
+.swipe{display:none;font-size:12px;color:#8A99A4}
+.org{background:#F3F8FA;border-radius:4px;overflow-x:auto}
+.orgin{min-width:760px;padding:24px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.orow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:flex-start;font-size:14px;line-height:1.5}
+.onode{border-radius:6px;padding:10px 14px;min-width:120px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.onode span{font-size:12px;white-space:pre-line}
+.on-n{background:#fff;border:1px solid #8FB3C2}.on-k{background:#0B3A57;color:#fff;border:1px solid #0B3A57}.on-g{background:#E9F5F8;border:1px dashed #4E8FA3}
+.olabel{font-size:12px;color:#6B7A86}.oarrow{font-size:18px;color:#6B8C99;line-height:1}
+.stats{display:flex;flex-wrap:wrap;gap:16px}
+.stat{flex:1 1 220px;border:1px solid #D5E2E8;border-left:4px solid #12A3B8;padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-size:30px;color:#0D3B5C}.stat span{font-size:14px;color:#44525F}
+.notice{border-radius:6px;padding:16px 20px;font-size:16px;line-height:1.75;white-space:pre-line}
+.n-info{background:#E9F5F8;border:1px solid #9FD0DB;color:#0B3A57}.n-warn{background:#FFF7EA;border:1px solid #E3B270;color:#6B3A00}.n-key{background:#0B3A57;color:#fff}
+.n-key a{color:#6FD3E3;font-size:22px;font-weight:700}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:#1F2A37;border:1px solid #D5E2E8;border-radius:4px;padding:18px 20px;background:#fff}
+.card.top{border-top:4px solid #12A3B8}
+.card b{font-size:17px;color:#0D3B5C}.card span{font-size:14px;color:#55636F;line-height:1.6}.card i{font-style:normal;font-size:14px;color:#0E8FA5}
+.member{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);border:1px solid #D5E2E8;border-radius:4px;overflow:hidden}
+.mleft{background:#EEF5F8;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.role{align-self:flex-start;font-size:12px;color:#0E8FA5;background:#D8F0F4;padding:3px 8px;letter-spacing:.03em}
+.mname{font-size:18px;font-weight:700}.msub{font-size:13px;color:#6B7A86}
+.member ul{margin:0;padding:18px 20px 18px 36px;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5;color:#2E3B47}
+.member li::marker{color:#9FD0DB}
+.dl{border:1px solid #D5E2E8;background:#F7F9FA;padding:14px 20px;display:flex;align-items:center;gap:12px;border-radius:3px}
+.dl .nm{flex:1;min-width:0;font-size:17px;font-weight:500}
+.dl .miss{font-size:13px;color:#8A99A4}
+.dlbtn{border:none;background:none;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{min-height:44px;padding:0 18px;border:1px solid #D5E2E8;background:#fff;color:#2E3B47;font-size:15px;cursor:pointer;border-radius:3px}
+.tab.on{background:#0B2E4F;border-color:#0B2E4F;color:#fff}
+.lang{display:flex;align-self:flex-start;border:1px solid #0E8FA5;border-radius:4px;overflow:hidden}
+.lang button{min-height:44px;padding:0 22px;border:none;background:#fff;color:#0E8FA5;font-size:15px;cursor:pointer}
+.lang button.on{background:#0E8FA5;color:#fff}
+.row{border:1px solid #D5E2E8;border-radius:4px;padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;background:#F7F9FA}
+.row .t{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.row .t a{font-size:18px;font-weight:500;color:#0D3B5C;text-decoration:none}
+.row .t span,.row .d{font-size:14px;color:#55636F}
+.btn-o{font-size:14px;color:#0E8FA5;text-decoration:none;border:1px solid #9FD0DB;padding:8px 14px;border-radius:3px}
+.btn-f{font-size:14px;color:#fff;background:#0E8FA5;border:none;padding:9px 14px;border-radius:3px;cursor:pointer}
+.year{display:flex;align-items:center;border:1px solid #D5E2E8;border-radius:3px;align-self:flex-start;height:44px}
+.year label{padding:0 12px;font-size:14px;color:#8A99A4;border-right:1px solid #D5E2E8;height:100%;display:flex;align-items:center}
+.year select{border:none;font-size:16px;padding:0 28px 0 16px;height:100%;background:#fff}
+.acc-h{display:flex;align-items:center;gap:14px;width:100%;min-height:64px;padding:0 20px;border:none;border-bottom:1px solid #D5E2E8;cursor:pointer;background:#fff;color:#1F2A37;text-align:left}
+.acc-h.open{background:#0B2E4F;color:#fff}
+.acc-h .y{font-size:28px;font-weight:700;color:#12A3B8}.acc-h .l{font-size:19px;font-weight:500;flex:1}
+.acc-b{padding:14px 20px 22px;display:flex;flex-direction:column;gap:22px}
+.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.meta div{background:#F3F8FA;border-radius:4px;padding:12px 16px;display:flex;flex-direction:column;gap:4px}
+.meta small{font-size:12px;color:#6B7A86}.meta b{font-size:15px;font-weight:500}
+.toc{border:1px solid #D5E2E8;border-radius:4px;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
+.toc div{display:flex;flex-wrap:wrap;gap:8px}
+.toc a{font-size:14px;color:#0E8FA5;text-decoration:none;border:1px solid #C9E3EA;border-radius:16px;padding:6px 12px}
+.fade{height:80px;margin-top:-80px;background:linear-gradient(rgba(255,255,255,0),#fff);position:relative}
+.more{align-self:center;min-height:44px;padding:0 28px;border:1px solid #0E8FA5;color:#0E8FA5;background:#fff;font-size:15px;border-radius:22px;cursor:pointer}
+details{border:1px solid #D5E2E8;border-radius:4px;padding:14px 20px}
+summary{cursor:pointer;font-size:17px;font-weight:700;color:#0D3B5C}
+.links{border-top:1px solid #E6ECEF;padding-top:18px;display:flex;flex-direction:column;gap:10px}
+.links div{display:flex;flex-wrap:wrap;gap:10px}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #E6ECEF}
+.svc div{display:flex;gap:12px;align-items:center;justify-content:center;padding:28px 8px;font-size:16px;font-weight:500}
+.svc small{font-size:13px;color:#8A99A4;font-weight:400}
+footer{background:#0D4F6B;color:#D7E9EF}
+.fcols{display:grid;grid-template-columns:1.1fr 1fr 1fr 1.3fr;gap:32px;padding-top:48px;padding-bottom:48px;font-size:14px;line-height:2}
+.fcols h4{margin:0;color:#6FD3E3;font-size:16px;font-weight:400}
+.copy{background:#0A4058;text-align:center;font-size:12px;padding:12px 16px;color:#A9C7D2}
+@media (max-width:1100px){.hnav,.cta{display:none}}
+@media (max-width:1024px){.shell{flex-direction:column;gap:20px}aside{width:100%}.navtoggle{display:flex}.side{display:none}aside.open .side{display:block}.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){h1{font-size:30px}.wrap{padding:0 16px}.member,.g2,.svc,.meta,.fcols{grid-template-columns:1fr}.swipe{display:block}}
+@media print{header,aside,.svc,footer,.review,.more,.fade{display:none}.shell{display:block}}
+</style>
+</head>
+<body>
+<div class="review"><div class="wrap">內容審閱版｜E 作業程序執行情形・F 內部稽核・G 利害關係人溝通｜2026-11-23｜下載按鈕尚未連結正式檔案</div></div>
+<header><div class="wrap hbar">
+<a class="logo" href="#">DFI</a>
+<nav class="hnav" aria-label="主選單"><span>PRODUCTS ▾</span><span>INDUSTRIES ▾</span><span>DFI INSIGHT</span><span>SUPPORT ▾</span><span style="color:#0E8FA5">ABOUT DFI ▾</span></nav>
+<div class="hright">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3B47" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E3B47" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+<a class="cta" href="#">CONTACT US →</a>
+</div></div></header>
+<section class="hero"><div class="wrap">
+<nav class="crumb" aria-label="麵包屑" id="crumb"></nav>
+<h1 id="h1"></h1>
+<div class="zh" id="zh"></div>
+</div></section>
+<main class="wrap"><div class="shell">
+<aside id="aside">
+<button type="button" class="navtoggle" id="navtoggle"><span id="navlabel"></span><span>▾</span></button>
+<div class="side">
+<div class="ir">←&nbsp;&nbsp;INVESTOR RELATIONS</div>
+<div class="grp"><span>Financial Information</span><span style="color:#8A99A4">▾</span></div>
+<div class="grp"><span>Shareholders Information</span><span style="color:#8A99A4">▾</span></div>
+<div class="grp on"><span>Corporate Governance</span><span style="color:#12A3B8">▴</span></div>
+<div id="nav" style="padding:10px 0 4px"></div>
+</div>
+</aside>
+<div class="content" id="content"></div>
+</div></main>
+<section class="svc wrap"><div>Sales and Quotation <small>Get product info and pricing</small></div><div>Download Center <small>Datasheets, manuals, and more</small></div><div>Technical Support <small>Get help from our experts</small></div></section>
+<footer>
+<div class="wrap fcols">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:40px;font-weight:900;color:#fff;font-family:'Arial Black',Roboto,sans-serif;line-height:1">DFI</span><span style="border:1px solid #13A9C0;color:#6FD3E3;padding:8px 18px;align-self:flex-start;line-height:1.4">CONTACT US →</span></div>
+<div><h4>Industries</h4>Industry Automation<br>Medical<br>Agile Gaming Solutions<br>Energy<br>Transportation<br>Defense<br>Edge AI<br>Design &amp; Manufacturing Service</div>
+<div><h4>About</h4>Company Information<br>Manufacturing and Quality<br>Worldwide Partners<br>Events<br>News Room<br>Investor Relations<br>ESG</div>
+<div><div style="color:#fff;font-size:20px;font-weight:700">Stay Ahead</div><div style="display:flex;margin-top:8px"><span style="flex:1;background:#fff;color:#8A99A4;padding:4px 12px">Enter your email</span><span style="background:#13A9C0;color:#fff;padding:4px 16px">Submit</span></div></div>
+</div>
+<div class="copy">COPYRIGHT© DFI 2024. ALL RIGHTS RESERVED. | Privacy Policy | Sitemap | Design By Cianwang</div>
+</footer>
+<script>
+const DATA = {"pages": {"E-01": {"id": "E-01", "zh": "作業程序執行情形", "en": "Implementation Status", "sect": "E-01", "intro": "本頁依年度列出本公司各項作業程序及政策之執行情形報告，提供 PDF 下載。", "hist": [], "histSrc": "", "dls": [{"name": "各年度執行情形 PDF", "st": "待補檔案", "stStyle": "font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; white-space: nowrap; color: #A4271B; background: #FDE4E1;"}], "links": [{"id": "D-00", "zh": "重要規章與政策"}], "kind": "yearly", "years": [{"y": "待匯入", "label": "作業程序執行情形（年度依舊網站實際清單）", "docs": [{"name": "待匯入原始文件內容", "st": "待補檔案", "stStyle": "font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 4px; color: #A4271B; background: #FDE4E1;"}], "blocks": []}], "blocks": []}, "F-01": {"id": "F-01", "zh": "內部稽核", "en": "Internal Audit", "sect": "F-01", "intro": "", "hist": [], "histSrc": "", "dls": [], "links": [], "kind": "info", "blocks": [{"title": "內容狀態", "isParas": false, "isTable": false, "isCards": false, "isOrg": false, "isStats": false, "isNotice": true, "isDl": false, "text": "本頁內容待客戶提供。", "noticeStyle": "border-radius: 8px; padding: 18px 22px; font-size: 16px; line-height: 1.75; white-space: pre-line; background: #FFF7EA; border: 1px solid #E3B270; color: #6B3A00;", "tone": "n-warn"}]}, "G-01": {"id": "G-01", "zh": "利害關係人溝通", "en": "Stakeholder Communication", "sect": "G-01", "intro": "", "hist": [], "histSrc": "", "dls": [], "links": [], "kind": "info", "blocks": [{"title": "內容狀態", "isParas": false, "isTable": false, "isCards": false, "isOrg": false, "isStats": false, "isNotice": true, "isDl": false, "text": "本頁內容待客戶提供。", "noticeStyle": "border-radius: 8px; padding: 18px 22px; font-size: 16px; line-height: 1.75; white-space: pre-line; background: #FFF7EA; border: 1px solid #E3B270; color: #6B3A00;", "tone": "n-warn"}]}, "A-01": {"id": "A-01", "zh": "公司治理概況", "en": "Corporate Governance", "sect": "A-01", "stub": true}, "B-01": {"id": "B-01", "zh": "董事會", "en": "Board of Directors", "sect": "B-01", "stub": true}, "C-01": {"id": "C-01", "zh": "功能性委員會", "en": "Committees", "sect": "C-01", "stub": true}, "D-00": {"id": "D-00", "zh": "重要規章與政策", "en": "Rules and Regulations", "sect": "D-00", "stub": true}}, "nav": [{"id": "A-01", "label": "Corporate Governance", "zh": "公司治理概況", "kids": []}, {"id": "B-01", "label": "Board of Directors", "zh": "董事會", "kids": [{"id": "B-02", "zh": "董事會成員多元化政策及落實情形"}, {"id": "B-03", "zh": "董事會成員及重要管理階層之接班規劃"}, {"id": "B-04", "zh": "董事會績效評估"}, {"id": "B-05", "zh": "董事會議事規範"}, {"id": "B-06", "zh": "董事會績效評估辦法"}]}, {"id": "C-01", "label": "Committees", "zh": "功能性委員會", "kids": [{"id": "C-02", "zh": "審計委員會"}, {"id": "C-03", "zh": "薪資報酬委員會"}, {"id": "C-04", "zh": "永續發展委員會"}, {"id": "C-05", "zh": "風險管理委員會"}]}, {"id": "D-00", "label": "Rules and Regulations", "zh": "重要規章與政策", "kids": []}, {"id": "E-01", "label": "Implementation Status", "zh": "作業程序執行情形", "kids": []}, {"id": "F-01", "label": "Internal Audit", "zh": "內部稽核", "kids": []}, {"id": "G-01", "label": "Stakeholder Communication", "zh": "利害關係人溝通", "kids": []}], "dIndex": [{"t": "公司章程及四大辦法", "rows": [{"id": "D1-01", "n": "公司章程", "u": "公司組織、股份、股東會、董事會等基本規定", "d": "114.05.22"}, {"id": "D1-02", "n": "取得或處分資產處理程序", "u": "取得或處分資產之評估、作業及公告申報", "d": "111.06.17"}, {"id": "D1-03", "n": "背書保證作業程序", "u": "背書保證對象、額度及作業程序", "d": "110.08.20"}, {"id": "D1-04", "n": "衍生性商品交易處理程序", "u": "衍生性商品交易之風險管理制度", "d": "110.08.20"}, {"id": "D1-05", "n": "資金貸與他人作業程序", "u": "資金貸與對象、限額及作業程序", "d": "110.08.20"}]}, {"t": "公司治理與誠信經營", "rows": [{"id": "D2-01", "n": "公司治理實務守則", "u": "公司治理制度之基本原則", "d": "115.08.04"}, {"id": "D2-02", "n": "永續發展實務守則", "u": "推動永續發展之原則與措施", "d": "115.11.03"}, {"id": "D2-03", "n": "誠信經營守則", "u": "誠信經營政策及防範方案", "d": "109.11.10"}, {"id": "D2-04", "n": "誠信手冊（含檢舉制度）", "u": "員工行為準則與檢舉流程", "d": "—"}, {"id": "D2-05", "n": "董事、高階主管等之道德行為準則", "u": "董事及經理人之道德標準", "d": "109.11.10"}, {"id": "D2-06", "n": "重大資訊處理暨防範內線交易作業程序", "u": "重大資訊處理及內線交易防範", "d": "111.11.03"}, {"id": "D2-07", "n": "關係人相互間財務業務相關作業規範", "u": "與關係人財務業務往來之規範", "d": "113.08.05"}]}, {"t": "風險管理、資訊安全與個資保護", "rows": [{"id": "D3-01", "n": "風險管理政策與程序", "u": "風險管理政策、程序與權責", "d": "112.03.02"}, {"id": "D3-02", "n": "資訊通訊安全政策", "u": "資訊安全目標與控制措施", "d": "—"}, {"id": "D3-03", "n": "個人資料保護管理辦法", "u": "個人資料之蒐集、處理、利用與安全維護", "d": "2014-10-20"}, {"id": "D3-04", "n": "智慧財產權管理辦法", "u": "智慧財產權之管理與保護", "d": "2023-09-27"}]}, {"t": "永續資訊與 ESG 管理", "rows": [{"id": "D4-01", "n": "永續資訊管理作業程序", "u": "永續資訊之編製、核准與揭露", "d": "113.11.04"}, {"id": "D4-02", "n": "永續報告書編製及驗證作業程序", "u": "永續報告書之編製、驗證與申報", "d": "113.11.04"}, {"id": "D4-03", "n": "高階經理人薪資報酬與 ESG 相關績效評估連結之政策", "u": "高階經理人薪酬與 ESG 指標連結", "d": "—"}]}, {"t": "人權與員工照顧", "rows": [{"id": "D5-01", "n": "人權政策及管理方案", "u": "人權政策、管理措施與訓練成果", "d": "—"}, {"id": "D5-02", "n": "員工福利、健康安全及退休制度", "u": "福利、退休、安全衛生與勞資溝通", "d": "—"}]}, {"t": "環境、能源與供應鏈政策", "rows": [{"id": "D6-01", "n": "社會責任及環境、安全、衛生政策", "u": "中英雙語政策聲明", "d": "—"}, {"id": "D6-02", "n": "能源政策", "u": "中英雙語政策聲明", "d": "—"}, {"id": "D6-03", "n": "衝突金屬政策", "u": "中英雙語政策聲明", "d": "—"}, {"id": "D6-04", "n": "環境保護政策及執行情形", "u": "歷史揭露資料（數據至 2022 年）", "d": "—"}, {"id": "D6-05", "n": "履行社會責任情形", "u": "歷史揭露資料", "d": "—"}]}], "first": "E-01"};
+const FILES = {"A-01": "DFI-CG-A_公司治理概況.html", "B-01": "DFI-CG-B_董事會.html", "B-02": "DFI-CG-B_董事會.html", "B-03": "DFI-CG-B_董事會.html", "B-04": "DFI-CG-B_董事會.html", "B-05": "DFI-CG-B_董事會.html", "B-06": "DFI-CG-B_董事會.html", "C-01": "DFI-CG-C_功能性委員會.html", "C-02": "DFI-CG-C_功能性委員會.html", "C-03": "DFI-CG-C_功能性委員會.html", "C-04": "DFI-CG-C_功能性委員會.html", "C-05": "DFI-CG-C_功能性委員會.html", "C-06": "DFI-CG-C_功能性委員會.html", "C-07": "DFI-CG-C_功能性委員會.html", "C-08": "DFI-CG-C_功能性委員會.html", "D-00": "DFI-CG-D_重要規章與政策.html", "D1-01": "DFI-CG-D_重要規章與政策.html", "D1-02": "DFI-CG-D_重要規章與政策.html", "D1-03": "DFI-CG-D_重要規章與政策.html", "D1-04": "DFI-CG-D_重要規章與政策.html", "D1-05": "DFI-CG-D_重要規章與政策.html", "D2-01": "DFI-CG-D_重要規章與政策.html", "D2-02": "DFI-CG-D_重要規章與政策.html", "D2-03": "DFI-CG-D_重要規章與政策.html", "D2-04": "DFI-CG-D_重要規章與政策.html", "D2-05": "DFI-CG-D_重要規章與政策.html", "D2-06": "DFI-CG-D_重要規章與政策.html", "D2-07": "DFI-CG-D_重要規章與政策.html", "D3-01": "DFI-CG-D_重要規章與政策.html", "D3-02": "DFI-CG-D_重要規章與政策.html", "D3-03": "DFI-CG-D_重要規章與政策.html", "D3-04": "DFI-CG-D_重要規章與政策.html", "D4-01": "DFI-CG-D_重要規章與政策.html", "D4-02": "DFI-CG-D_重要規章與政策.html", "D4-03": "DFI-CG-D_重要規章與政策.html", "D5-01": "DFI-CG-D_重要規章與政策.html", "D5-02": "DFI-CG-D_重要規章與政策.html", "D6-01": "DFI-CG-D_重要規章與政策.html", "D6-02": "DFI-CG-D_重要規章與政策.html", "D6-03": "DFI-CG-D_重要規章與政策.html", "D6-04": "DFI-CG-D_重要規章與政策.html", "D6-05": "DFI-CG-D_重要規章與政策.html", "E-01": "DFI-CG-EFG_其他選單項目.html", "F-01": "DFI-CG-EFG_其他選單項目.html", "G-01": "DFI-CG-EFG_其他選單項目.html"};
+const HERE = "DFI-CG-EFG_其他選單項目.html";
+const S = { exp: false, lang: 'zh', year: 'All', open: {}, tab: 'int', dTab: 0 };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const href = (id) => (FILES[id] && FILES[id] !== HERE ? FILES[id] : '') + '#' + id;
+const DLICON = '<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12A3B8" stroke-width="2"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg>';
+const FILEICON = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#44525F" stroke-width="1.6"><path d="M6 3h8l4 4v14H6z"/><path d="M9 12h6M9 16h6"/></svg>';
+function para(p) { return '<p' + (p.aid ? ' id="' + p.aid + '"' : '') + ' style="' + esc(p.style) + '">' + (p.lab ? '<b style="color:#0D3B5C">' + esc(p.lab) + '</b>' : '') + esc(p.txt) + '</p>'; }
+function dlRow(d) {
+  const miss = d.st !== 'PDF 已提供';
+  return '<div class="dl">' + FILEICON + '<span class="nm">' + esc(d.name) + '</span>' + (miss ? '<span class="miss">檔案待提供</span>' : '<button type="button" class="dlbtn" aria-label="下載 ' + esc(d.name) + '">' + DLICON + '</button>') + '</div>';
+}
+function block(b) {
+  let h = '<section class="blk"><h2>' + esc(b.title) + '</h2>';
+  if (b.isNotice) h += '<div class="notice ' + (b.tone || 'n-info') + '">' + (b.html || esc(b.text)) + '</div>';
+  if (b.isStats) h += '<div class="stats">' + b.stats.map(s => '<div class="stat"><b>' + esc(s.v) + '</b><span>' + esc(s.l) + '</span></div>').join('') + '</div>';
+  if (b.isParas) h += '<div class="paras">' + b.paras.map(para).join('') + '</div>';
+  if (b.isTable) h += '<div class="swipe">← 表格可左右滑動 →</div><div class="tw"><table><thead><tr>' + b.head.map(x => '<th>' + esc(x.t) + '</th>').join('') + '</tr></thead><tbody>' + b.rows.map(r => '<tr>' + r.cells.map(c => '<td>' + esc(c.t) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>' + (b.note ? '<div class="tnote">' + esc(b.note) + '</div>' : '');
+  if (b.isOrg) h += '<div class="org"><div class="orgin">' + b.orgRows.map(r => (r.label ? '<div class="olabel">' + esc(r.label) + '</div>' : '') + '<div class="orow">' + r.nodes.map(n => '<div class="onode on-' + n.k + '"><b>' + esc(n.t) + '</b>' + (n.sub ? '<span>' + esc(n.sub) + '</span>' : '') + '</div>').join('') + '</div>' + (r.arrow ? '<div class="oarrow" aria-hidden="true">↓</div>' : '')).join('') + '</div></div>';
+  if (b.isLinkCards) h += '<div class="g2">' + b.items.map(c => '<a class="card" href="' + href(c.id) + '"><b>' + esc(c.t) + '</b><span>' + esc(c.sub) + '</span><i>查看內容 →</i></a>').join('') + '</div>';
+  return h + '</section>';
+}
+function go() {
+  let pid = decodeURIComponent(location.hash.slice(1));
+  if (!DATA.pages[pid] || FILES[pid] !== HERE) pid = DATA.first;
+  const pg = DATA.pages[pid], sect = pg.sect;
+  document.title = pg.zh + '｜' + "DFI 公司治理專區｜E 作業程序執行情形・F 內部稽核・G 利害關係人溝通";
+  // nav
+  $('nav').innerHTML = DATA.nav.map(n => {
+    const on = n.id === sect;
+    let s = '<a class="n' + (on ? ' on' : '') + (n.id === pid ? ' here' : '') + '" href="' + href(n.id) + '">' + esc(n.label) + '<small>' + esc(n.zh) + '</small></a>';
+    if (on) s += n.kids.map(k => '<a class="k' + (k.id === pid ? ' here' : '') + '" href="' + href(k.id) + '">' + esc(k.zh) + '</a>').join('');
+    return s;
+  }).join('');
+  $('navlabel').textContent = 'Corporate Governance｜' + DATA.pages[sect].en;
+  // hero
+  const cr = [['Home'], ['About DFI'], ['Investor Relations'], ['Corporate Governance', 'A-01']];
+  if (sect !== 'A-01') cr.push([DATA.pages[sect].en, sect]);
+  if (pid !== sect && pid !== 'A-01') cr.push([pg.zh, pid]);
+  $('crumb').innerHTML = cr.map((c, i) => (i ? '<span>/</span>' : '') + (i === cr.length - 1 ? '<span class="cur">' + esc(c[0]) + '</span>' : (c[1] ? '<a href="' + href(c[1]) + '">' + esc(c[0]) + '</a>' : '<span>' + esc(c[0]) + '</span>'))).join('');
+  const w = pg.en.split(' ');
+  $('h1').innerHTML = w.length > 1 ? esc(w.slice(0, -1).join(' ')) + ' <em>' + esc(w[w.length - 1]) + '</em>' : esc(w[0]);
+  $('zh').textContent = pg.zh;
+  // content
+  let h = '<p class="lead">' + esc(pg.intro) + '</p>';
+  if (pg.kind === 'board') {
+    h += '<div style="display:flex;flex-direction:column;gap:12px">' + pg.members.map(m => '<div class="member"><div class="mleft"><span class="role">' + esc(m.role) + '</span><span class="mname">' + esc(m.name) + '</span><span class="msub">' + esc(m.sub) + '</span><span class="msub" style="margin-top:12px">Tenure <b style="color:#0E8FA5">3</b></span></div><ul>' + m.lines.map(l => '<li>' + esc(l.t) + '</li>').join('') + '</ul></div>').join('') + '</div>';
+    h += '<h2 class="big">Board Topics</h2><div class="g2">' + pg.topics.map(t => '<a class="card" href="' + href(t.id) + '"><b>' + esc(t.zh) + '</b><span>' + esc(t.desc) + '</span><i>查看內容 →</i></a>').join('') + '</div>';
+  }
+  if (pg.kind === 'cards') h += '<div class="g2">' + pg.cards.map(c => '<a class="card top" href="' + href(c.id) + '"><b style="font-size:20px">' + esc(c.t) + '</b><span>' + esc(c.a) + '</span><span>成員：' + esc(c.b) + '</span><span>本屆任期：' + esc(c.c) + '</span><i>進入委員會 →</i></a>').join('') + '</div>';
+  if (pg.kind === 'index') {
+    h += '<div class="tabs" role="tablist">' + DATA.dIndex.map((g, i) => '<button type="button" role="tab" class="tab' + (i === S.dTab ? ' on' : '') + '" data-dtab="' + i + '">' + esc(g.t) + '</button>').join('') + '</div>';
+    h += '<div style="display:flex;flex-direction:column;gap:10px">' + DATA.dIndex[S.dTab].rows.map(r => '<div class="row"><div class="t"><a href="' + href(r.id) + '">' + esc(r.n) + '</a><span>' + esc(r.u) + '</span></div><span class="d">' + (r.d && r.d !== '—' ? '最新修訂：' + esc(r.d) : '') + '</span><a class="btn-o" href="' + href(r.id) + '">查看完整內容</a><button type="button" class="btn-f">下載 PDF ↓</button></div>').join('') + '</div>';
+  }
+  if (pg.kind === 'yearly') {
+    if (pg.evalTabs) h += '<div class="tabs" role="tablist">' + pg.evalTabs.map(t => '<button type="button" role="tab" class="tab' + (t.k === S.tab ? ' on' : '') + '" data-etab="' + t.k + '">' + esc(t.t) + '</button>').join('') + '</div>';
+    const src = pg.years.filter(y => !y.tab || y.tab === S.tab);
+    h += '<div class="year"><label for="yr">Year</label><select id="yr">' + ['All'].concat(src.map(y => y.y)).map(v => '<option' + (v === S.year ? ' selected' : '') + '>' + esc(v) + '</option>').join('') + '</select></div><div>';
+    src.filter(y => S.year === 'All' || S.year === y.y).forEach((y, i) => {
+      const key = (y.tab || '') + y.y;
+      const open = S.year !== 'All' || (S.open[key] !== undefined ? S.open[key] : i === 0);
+      h += '<button type="button" class="acc-h' + (open ? ' open' : '') + '" aria-expanded="' + open + '" data-acc="' + esc(key) + '" data-open="' + open + '"><span class="y">' + esc(y.y) + '</span><span class="l">' + esc(y.label) + '</span><span aria-hidden="true">' + (open ? '▴' : '▾') + '</span></button>';
+      if (open) h += '<div class="acc-b"><div class="g2">' + y.docs.map(dlRow).join('') + '</div>' + y.blocks.map(block).join('') + '</div>';
+    });
+    h += '</div>';
+  }
+  if (pg.kind === 'bil') h += '<div class="lang" role="tablist"><button type="button" role="tab" data-lang="zh" class="' + (S.lang === 'zh' ? 'on' : '') + '">中文</button><button type="button" role="tab" data-lang="en" class="' + (S.lang === 'en' ? 'on' : '') + '">English</button></div>';
+  if (pg.kind === 'doc') {
+    h += '<div class="meta">' + pg.docMeta.filter(m => m.k !== '文件類型').map(m => '<div><small>' + esc(m.k) + '</small><b>' + esc(m.v) + '</b></div>').join('') + '</div>';
+    if (pg.toc.length) h += '<nav class="toc" aria-label="章節導覽"><b style="color:#0D3B5C">章節導覽</b><div>' + pg.toc.map(t => '<a href="#' + pid + '" data-jump="' + t.aid + '">' + esc(t.t) + '</a>').join('') + '</div></nav>';
+  }
+  h += pg.blocks.filter(b => !b.lang || b.lang === S.lang).map(block).join('');
+  if (pg.kind === 'doc') {
+    const all = pg.body, can = all.length > 16, show = can && !S.exp ? all.slice(0, 16) : all;
+    h += '<section class="blk"><h2>' + esc(pg.bodyTitle) + '</h2><div class="paras">' + show.map(para).join('') + '</div>' + (can ? (S.exp ? '' : '<div class="fade"></div>') + '<button type="button" class="more" data-exp="1">' + (S.exp ? '收合全文 ▴' : '展開全文 ▾') + '</button>' : '') + '</section>';
+    if (pg.hist.length) h += '<details><summary>修訂沿革</summary><ol style="margin:12px 0 0;padding-left:20px;font-size:14px;line-height:1.8">' + pg.hist.map(x => '<li>' + esc(x.t) + '</li>').join('') + '</ol></details>';
+  }
+  if (pg.dls.length) h += '<section class="blk"><h2 class="big">Downloads</h2>' + pg.dls.map(dlRow).join('') + '</section>';
+  if (pg.links.length) h += '<div class="links"><b style="color:#0D3B5C">相關內容</b><div>' + pg.links.map(l => '<a class="btn-o" href="' + href(l.id) + '">' + esc(l.zh) + ' →</a>').join('') + '</div></div>';
+  $('content').innerHTML = h;
+  $('aside').classList.remove('open');
+}
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('[data-dtab],[data-etab],[data-acc],[data-lang],[data-exp],[data-jump],#navtoggle');
+  if (!t) return;
+  if (t.id === 'navtoggle') { $('aside').classList.toggle('open'); return; }
+  if (t.dataset.dtab) S.dTab = +t.dataset.dtab;
+  if (t.dataset.etab) { S.tab = t.dataset.etab; S.year = 'All'; }
+  if (t.dataset.acc) S.open[t.dataset.acc] = t.dataset.open !== 'true';
+  if (t.dataset.lang) S.lang = t.dataset.lang;
+  if (t.dataset.exp) S.exp = !S.exp;
+  if (t.dataset.jump) { e.preventDefault(); S.exp = true; go(); const el = document.getElementById(t.dataset.jump); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+  go();
+});
+document.addEventListener('change', (e) => { if (e.target.id === 'yr') { S.year = e.target.value; go(); } });
+window.addEventListener('hashchange', () => { S.exp = false; S.year = 'All'; S.open = {}; const p = DATA.pages[decodeURIComponent(location.hash.slice(1))]; if (p) { const i = DATA.dIndex.findIndex(g => g.rows.some(r => r.id === p.id)); if (i >= 0) S.dTab = i; } go(); window.scrollTo(0, 0); });
+go();
+</script>
+</body>
+</html>
